@@ -54,7 +54,7 @@ public class HomeGUI extends JFrame {
 	public HomeGUI(Controller controller) {
 		this.controller = controller;
 
-		setIconImage(Toolkit.getDefaultToolkit().getImage(HomeGUI.class.getResource("/Img/LogoB-48.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(HomeGUI.class.getResource("/com/smup/Img/LogoB-48.png")));
 
 		setBackground(new Color(36, 53, 102));
 		setTitle("Home");
@@ -69,7 +69,7 @@ public class HomeGUI extends JFrame {
 
 		JLabel logoTop = new JLabel("");
 		logoTop.setHorizontalAlignment(SwingConstants.CENTER);
-		logoTop.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Logo-64.png")));
+		logoTop.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Logo-64.png")));
 
 		JPanel Card = new JPanel();
 		Card.setBackground(AppColor.grey);
@@ -79,7 +79,6 @@ public class HomeGUI extends JFrame {
 
 		JPanel panelShowArtists = new JPanel();
 		panelShowArtists.setBackground(AppColor.grey);
-
 
 		JPanel panelShowAlbums = new JPanel();
 		panelShowAlbums.setBackground(AppColor.grey);
@@ -115,7 +114,7 @@ public class HomeGUI extends JFrame {
 		buttonDashboard.setFocusPainted(false);
 		buttonDashboard.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		buttonDashboard.setBorderPainted(false);
-		buttonDashboard.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Dashboard-48.png")));
+		buttonDashboard.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Dashboard-48.png")));
 
 		JButton buttonShowArtists = new JButton("Show artist");
 		buttonShowArtists.addActionListener(new ActionListener() {
@@ -142,7 +141,7 @@ public class HomeGUI extends JFrame {
 				buttonShowArtists.setBackground(AppColor.black);
 			}
 		});
-		buttonShowArtists.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Artists-48.png")));
+		buttonShowArtists.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Artists-48.png")));
 		buttonShowArtists.setForeground(Color.WHITE);
 		buttonShowArtists.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		buttonShowArtists.setFocusPainted(false);
@@ -174,7 +173,7 @@ public class HomeGUI extends JFrame {
 				buttonShowAlbums.setBackground(AppColor.black);
 			}
 		});
-		buttonShowAlbums.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Albums-48.png")));
+		buttonShowAlbums.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Albums-48.png")));
 		buttonShowAlbums.setForeground(Color.WHITE);
 		buttonShowAlbums.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		buttonShowAlbums.setFocusPainted(false);
@@ -228,7 +227,7 @@ public class HomeGUI extends JFrame {
 				buttonOthers.setBackground(AppColor.black);
 			}
 		});
-		buttonOthers.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Song-48.png")));
+		buttonOthers.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Song-48.png")));
 		buttonOthers.setIconTextGap(10);
 		buttonOthers.setHorizontalTextPosition(SwingConstants.RIGHT);
 		buttonOthers.setHorizontalAlignment(SwingConstants.LEFT);
@@ -258,7 +257,7 @@ public class HomeGUI extends JFrame {
 				System.exit(0);
 			}
 		});
-		btnLogOut.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/LogOut-48.png")));
+		btnLogOut.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/LogOut-48.png")));
 		btnLogOut.setIconTextGap(10);
 		btnLogOut.setHorizontalTextPosition(SwingConstants.RIGHT);
 		btnLogOut.setHorizontalAlignment(SwingConstants.LEFT);
@@ -269,7 +268,7 @@ public class HomeGUI extends JFrame {
 		btnLogOut.setBackground(new Color(15, 15, 15));
 
 		JLabel lblNameUsers = new JLabel("NameUsers");
-		lblNameUsers.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Account-48.png")));
+		lblNameUsers.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Account-48.png")));
 		lblNameUsers.setText(controller.user.getUsername());
 		lblNameUsers.setHorizontalAlignment(SwingConstants.LEFT);
 		lblNameUsers.setForeground(Color.WHITE);
@@ -346,7 +345,7 @@ public class HomeGUI extends JFrame {
 		});
 		buttonAddArtist.setVerticalTextPosition(SwingConstants.BOTTOM);
 		buttonAddArtist.setHorizontalTextPosition(SwingConstants.CENTER);
-		buttonAddArtist.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Artist-64.png")));
+		buttonAddArtist.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Artist-64.png")));
 		buttonAddArtist.setIconTextGap(10);
 		buttonAddArtist.setForeground(Color.WHITE);
 		buttonAddArtist.setFont(new Font("Segoe UI", Font.PLAIN, 18));
@@ -372,7 +371,7 @@ public class HomeGUI extends JFrame {
 			}
 		});
 		buttonAddAlbum.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		buttonAddAlbum.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Album-64.png")));
+		buttonAddAlbum.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Album-64.png")));
 		buttonAddAlbum.setVerticalTextPosition(SwingConstants.BOTTOM);
 		buttonAddAlbum.setIconTextGap(10);
 		buttonAddAlbum.setHorizontalTextPosition(SwingConstants.CENTER);
@@ -410,7 +409,7 @@ public class HomeGUI extends JFrame {
 				controller.frameAddSongGUI(true);
 			}
 		});
-		buttonAddSong.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Song-48.png")));
+		buttonAddSong.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Song-48.png")));
 		buttonAddSong.setVerticalTextPosition(SwingConstants.BOTTOM);
 		buttonAddSong.setIconTextGap(10);
 		buttonAddSong.setHorizontalTextPosition(SwingConstants.CENTER);
@@ -827,7 +826,7 @@ public class HomeGUI extends JFrame {
 					}
 				});
 				panelPrintArtists.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
-				buttonDelete.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/DeleteArtist-48.png")));
+				buttonDelete.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/DeleteArtist-48.png")));
 				buttonDelete.setIconTextGap(10);
 				buttonDelete.setHorizontalTextPosition(SwingConstants.RIGHT);
 				buttonDelete.setForeground(Color.WHITE);
@@ -841,7 +840,7 @@ public class HomeGUI extends JFrame {
 				JButton buttonSave = new JButton("");
 				buttonSave.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 				buttonSave.setEnabled(false);
-				buttonSave.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Save-48.png")));
+				buttonSave.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Save-48.png")));
 				buttonSave.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						textFieldNomeArtista.setEditable(false);
@@ -930,7 +929,7 @@ public class HomeGUI extends JFrame {
 					}
 				});
 				buttonModify.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-				buttonModify.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Modify-48.png")));
+				buttonModify.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Modify-48.png")));
 				buttonModify.setIconTextGap(10);
 				buttonModify.setHorizontalTextPosition(SwingConstants.RIGHT);
 				buttonModify.setForeground(Color.WHITE);
@@ -1039,7 +1038,7 @@ public class HomeGUI extends JFrame {
 
 				String followers = textFieldFollowers.getText();
 				float retribuzione = controller.retribuzioneArtista(followers);
-				textFieldRetribuzione.setText(retribuzione + "�");
+				textFieldRetribuzione.setText(retribuzione + "€");
 			}
 		} else
 				JOptionPane.showMessageDialog(this,
@@ -1152,7 +1151,7 @@ public class HomeGUI extends JFrame {
 							buttonModificaAlbum.setBackground(AppColor.black);
 						}
 					});
-					buttonModificaAlbum.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Modify-48.png")));
+					buttonModificaAlbum.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Modify-48.png")));
 					buttonModificaAlbum.setIconTextGap(10);
 					buttonModificaAlbum.setHorizontalTextPosition(SwingConstants.RIGHT);
 					buttonModificaAlbum.setForeground(Color.WHITE);
@@ -1201,7 +1200,7 @@ public class HomeGUI extends JFrame {
 						}
 					});
 					buttonSalvaAlbum.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-					buttonSalvaAlbum.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Save-48.png")));
+					buttonSalvaAlbum.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Save-48.png")));
 					buttonSalvaAlbum.setIconTextGap(10);
 					buttonSalvaAlbum.setHorizontalTextPosition(SwingConstants.RIGHT);
 					buttonSalvaAlbum.setForeground(Color.WHITE);
@@ -1249,7 +1248,7 @@ public class HomeGUI extends JFrame {
 						}
 					});
 					buttonDeleteAlbum.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-					buttonDeleteAlbum.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/DeleteArtist-48.png")));
+					buttonDeleteAlbum.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/DeleteArtist-48.png")));
 					buttonDeleteAlbum.setIconTextGap(10);
 					buttonDeleteAlbum.setHorizontalTextPosition(SwingConstants.RIGHT);
 					buttonDeleteAlbum.setForeground(Color.WHITE);
@@ -1463,7 +1462,7 @@ public class HomeGUI extends JFrame {
 							buttonDeleteSong.setBackground(AppColor.black);
 						}
 					});
-					buttonDeleteSong.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/DeleteArtist-48.png")));
+					buttonDeleteSong.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/DeleteArtist-48.png")));
 					buttonDeleteSong.setIconTextGap(10);
 					buttonDeleteSong.setHorizontalTextPosition(SwingConstants.RIGHT);
 					buttonDeleteSong.setForeground(Color.WHITE);
@@ -1500,7 +1499,7 @@ public class HomeGUI extends JFrame {
 							buttonModificaSong.setBackground(AppColor.black);
 						}
 					});
-					buttonModificaSong.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Modify-48.png")));
+					buttonModificaSong.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Modify-48.png")));
 					buttonModificaSong.setIconTextGap(10);
 					buttonModificaSong.setHorizontalTextPosition(SwingConstants.RIGHT);
 					buttonModificaSong.setForeground(Color.WHITE);
@@ -1543,7 +1542,7 @@ public class HomeGUI extends JFrame {
 							buttonSaveSong.setBackground(AppColor.black);
 						}
 					});
-					buttonSaveSong.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Save-48.png")));
+					buttonSaveSong.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Save-48.png")));
 					buttonSaveSong.setIconTextGap(10);
 					buttonSaveSong.setHorizontalTextPosition(SwingConstants.RIGHT);
 					buttonSaveSong.setForeground(Color.WHITE);
@@ -1737,7 +1736,7 @@ public class HomeGUI extends JFrame {
 							buttonDeleteSingle.setBackground(AppColor.black);
 						}
 					});
-					buttonDeleteSingle.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/DeleteArtist-48.png")));
+					buttonDeleteSingle.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/DeleteArtist-48.png")));
 					buttonDeleteSingle.setIconTextGap(10);
 					buttonDeleteSingle.setHorizontalTextPosition(SwingConstants.RIGHT);
 					buttonDeleteSingle.setForeground(Color.WHITE);
@@ -1789,7 +1788,7 @@ public class HomeGUI extends JFrame {
 							buttonModifySingolo.setBackground(AppColor.black);
 						}
 					});
-					buttonModifySingolo.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Modify-48.png")));
+					buttonModifySingolo.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Modify-48.png")));
 					buttonModifySingolo.setIconTextGap(10);
 					buttonModifySingolo.setHorizontalTextPosition(SwingConstants.RIGHT);
 					buttonModifySingolo.setForeground(Color.WHITE);
@@ -1834,7 +1833,7 @@ public class HomeGUI extends JFrame {
 							buttonSaveModifySingolo.setBackground(AppColor.black);
 						}
 					});
-					buttonSaveModifySingolo.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Save-48.png")));
+					buttonSaveModifySingolo.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Save-48.png")));
 					buttonSaveModifySingolo.setIconTextGap(10);
 					buttonSaveModifySingolo.setHorizontalTextPosition(SwingConstants.RIGHT);
 					buttonSaveModifySingolo.setForeground(Color.WHITE);
@@ -2040,7 +2039,7 @@ public class HomeGUI extends JFrame {
 							buttonDeleteEP.setBackground(AppColor.black);
 						}
 					});
-					buttonDeleteEP.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/DeleteArtist-48.png")));
+					buttonDeleteEP.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/DeleteArtist-48.png")));
 					buttonDeleteEP.setIconTextGap(10);
 					buttonDeleteEP.setHorizontalTextPosition(SwingConstants.RIGHT);
 					buttonDeleteEP.setForeground(Color.WHITE);
@@ -2089,7 +2088,7 @@ public class HomeGUI extends JFrame {
 							}
 						}
 					});
-					buttonSaveEP.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Save-48.png")));
+					buttonSaveEP.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Save-48.png")));
 					buttonSaveEP.setIconTextGap(10);
 					buttonSaveEP.setHorizontalTextPosition(SwingConstants.RIGHT);
 					buttonSaveEP.setForeground(Color.WHITE);
@@ -2141,7 +2140,7 @@ public class HomeGUI extends JFrame {
 							buttonModifyEP.setBackground(AppColor.black);
 						}
 					});
-					buttonModifyEP.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Modify-48.png")));
+					buttonModifyEP.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Modify-48.png")));
 					buttonModifyEP.setIconTextGap(10);
 					buttonModifyEP.setHorizontalTextPosition(SwingConstants.RIGHT);
 					buttonModifyEP.setForeground(Color.WHITE);

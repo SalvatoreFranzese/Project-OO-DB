@@ -40,7 +40,7 @@ public class LoginGUI extends JFrame {
 		setUndecorated(true);
 		setBackground(Color.DARK_GRAY);
 
-		setIconImage(Toolkit.getDefaultToolkit().getImage(HomeGUI.class.getResource("/Img/LogoB-48.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(HomeGUI.class.getResource("/com/smup/Img/LogoB-48.png")));
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 825, 574);
@@ -221,9 +221,9 @@ public class LoginGUI extends JFrame {
 		chckbxShowPassword.setHorizontalAlignment(SwingConstants.CENTER);
 		chckbxShowPassword.setBounds(555, 298, 40, 34);
 
-		chckbxShowPassword.setIcon(new ImageIcon(LoginGUI.class.getResource("/Img/NOShowPassword-32.png")));
-		chckbxShowPassword.setSelectedIcon(new ImageIcon(LoginGUI.class.getResource("/Img/ShowPassword-32.png")));
-		chckbxShowPassword.setPressedIcon(new ImageIcon(LoginGUI.class.getResource("/Img/ShowPassword-32.png")));
+		chckbxShowPassword.setIcon(new ImageIcon(LoginGUI.class.getResource("/com/smup/Img/NOShowPassword-32.png")));
+		chckbxShowPassword.setSelectedIcon(new ImageIcon(LoginGUI.class.getResource("/com/smup/Img/ShowPassword-32.png")));
+		chckbxShowPassword.setPressedIcon(new ImageIcon(LoginGUI.class.getResource("/com/smup/Img/ShowPassword-32.png")));
 
 		chckbxShowPassword.setForeground(Color.WHITE);
 		chckbxShowPassword.setFont(new Font("Segoe UI", Font.PLAIN, 18));
@@ -269,7 +269,7 @@ public class LoginGUI extends JFrame {
 		
 		JLabel logo = new JLabel("");
 		logo.setHorizontalAlignment(SwingConstants.CENTER);
-		logo.setIcon(new ImageIcon(LoginGUI.class.getResource("/Img/Logo-64.png")));
+		logo.setIcon(new ImageIcon(LoginGUI.class.getResource("/com/smup/Img/Logo-64.png")));
 		logo.setBounds(10, 23, 785, 94);
 		panelLogin.add(logo);
 		contentPane.add(labelX);

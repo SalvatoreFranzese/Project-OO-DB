@@ -63,7 +63,7 @@ public class HomeUserGUI extends JFrame {
 	public HomeUserGUI(Controller controller) {
 		this.controller = controller;
 
-		setIconImage(Toolkit.getDefaultToolkit().getImage(HomeUserGUI.class.getResource("/Img/LogoB-48.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(HomeUserGUI.class.getResource("/com/smup/Img/LogoB-48.png")));
 
 		setBackground(new Color(36, 53, 102));
 		setTitle("Home");
@@ -78,7 +78,7 @@ public class HomeUserGUI extends JFrame {
 
 		JLabel logoTop = new JLabel("");
 		logoTop.setHorizontalAlignment(SwingConstants.CENTER);
-		logoTop.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/Img/Logo-64.png")));
+		logoTop.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/com/smup/Img/Logo-64.png")));
 
 		JPanel Card = new JPanel();
 		Card.setBackground(AppColor.grey);
@@ -124,7 +124,7 @@ public class HomeUserGUI extends JFrame {
 		buttonSearch.setFocusPainted(false);
 		buttonSearch.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		buttonSearch.setBorderPainted(false);
-		buttonSearch.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/Img/Search.png")));
+		buttonSearch.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/com/smup/Img/Search.png")));
 
 		JButton buttonShowArtists = new JButton("Show all artists");
 		buttonShowArtists.setFocusPainted(false);
@@ -153,7 +153,7 @@ public class HomeUserGUI extends JFrame {
 				buttonShowArtists.setBackground(AppColor.black);
 			}
 		});
-		buttonShowArtists.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/Img/Artists-48.png")));
+		buttonShowArtists.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/com/smup/Img/Artists-48.png")));
 		buttonShowArtists.setForeground(Color.WHITE);
 		buttonShowArtists.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		buttonShowArtists.setBorderPainted(false);
@@ -185,7 +185,7 @@ public class HomeUserGUI extends JFrame {
 				buttonShowAlbums.setBackground(AppColor.black);
 			}
 		});
-		buttonShowAlbums.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/Img/Albums-48.png")));
+		buttonShowAlbums.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/com/smup/Img/Albums-48.png")));
 		buttonShowAlbums.setForeground(Color.WHITE);
 		buttonShowAlbums.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		buttonShowAlbums.setFocusPainted(false);
@@ -240,7 +240,7 @@ public class HomeUserGUI extends JFrame {
 				buttonOthers.setBackground(AppColor.black);
 			}
 		});
-		buttonOthers.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/Img/Song-48.png")));
+		buttonOthers.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/com/smup/Img/Song-48.png")));
 		buttonOthers.setIconTextGap(10);
 		buttonOthers.setHorizontalTextPosition(SwingConstants.RIGHT);
 		buttonOthers.setHorizontalAlignment(SwingConstants.LEFT);
@@ -270,7 +270,7 @@ public class HomeUserGUI extends JFrame {
 				setVisible(false);
 			}
 		});
-		btnLogOut.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/LogOut-48.png")));
+		btnLogOut.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/LogOut-48.png")));
 		btnLogOut.setIconTextGap(10);
 		btnLogOut.setHorizontalTextPosition(SwingConstants.RIGHT);
 		btnLogOut.setHorizontalAlignment(SwingConstants.LEFT);
@@ -281,7 +281,7 @@ public class HomeUserGUI extends JFrame {
 		btnLogOut.setBackground(new Color(15, 15, 15));
 
 		JLabel lblNameUsers = new JLabel("NameUsers");
-		lblNameUsers.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/Img/Account-48.png")));
+		lblNameUsers.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/com/smup/Img/Account-48.png")));
 		lblNameUsers.setText(controller.user.getUsername());
 		lblNameUsers.setHorizontalAlignment(SwingConstants.LEFT);
 		lblNameUsers.setForeground(Color.WHITE);
@@ -300,7 +300,7 @@ public class HomeUserGUI extends JFrame {
 			}
 		});
 		btnFollow.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		btnFollow.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/Img/FollowSection-48.png")));
+		btnFollow.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/com/smup/Img/FollowSection-48.png")));
 		btnFollow.setIconTextGap(10);
 		btnFollow.setHorizontalTextPosition(SwingConstants.RIGHT);
 		btnFollow.setHorizontalAlignment(SwingConstants.LEFT);
@@ -892,7 +892,7 @@ public class HomeUserGUI extends JFrame {
 							stampaArtistGUI();
 						}
 					});
-					buttonFollowArtist.setIcon(new ImageIcon(HomeGUI.class.getResource("/Img/Follow-48.png")));
+					buttonFollowArtist.setIcon(new ImageIcon(HomeGUI.class.getResource("/com/smup/Img/Follow-48.png")));
 					buttonFollowArtist.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 					buttonFollowArtist.addMouseListener(new MouseAdapter() {
 						@Override
@@ -1689,7 +1689,7 @@ public class HomeUserGUI extends JFrame {
 							DeleteFollow.setBackground(AppColor.black);
 						}
 					});
-					DeleteFollow.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/Img/DeleteArtist-48.png")));
+					DeleteFollow.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/com/smup/Img/DeleteArtist-48.png")));
 					DeleteFollow.setIconTextGap(10);
 					DeleteFollow.setHorizontalTextPosition(SwingConstants.RIGHT);
 					DeleteFollow.setForeground(Color.WHITE);
@@ -1787,7 +1787,7 @@ public class HomeUserGUI extends JFrame {
 						stampaRicerca("  ");
 					}
 				});
-				btnFollow.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/Img/Follow-48.png")));
+				btnFollow.setIcon(new ImageIcon(HomeUserGUI.class.getResource("/com/smup/Img/Follow-48.png")));
 				btnFollow.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 				btnFollow.addMouseListener(new MouseAdapter() {
 					@Override

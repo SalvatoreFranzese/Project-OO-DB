@@ -40,7 +40,7 @@ public class SignUpGUI extends JFrame {
 		setUndecorated(true);
 		setBackground(Color.DARK_GRAY);
 
-		setIconImage(Toolkit.getDefaultToolkit().getImage(HomeGUI.class.getResource("/Img/LogoB-48.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(HomeGUI.class.getResource("/com/smup/Img/LogoB-48.png")));
 
 		setLocationRelativeTo(null);
 
@@ -152,9 +152,9 @@ public class SignUpGUI extends JFrame {
 
 		JCheckBox chckbxIsAdmin = new JCheckBox("Is Admin");
 		chckbxIsAdmin.setBounds(215, 352, 380, 34);
-		chckbxIsAdmin.setIcon(new ImageIcon(SignUpGUI.class.getResource("/Img/boxCheck-32.png")));
-		chckbxIsAdmin.setSelectedIcon(new ImageIcon(SignUpGUI.class.getResource("/Img/Check-32.png")));
-		chckbxIsAdmin.setPressedIcon(new ImageIcon(SignUpGUI.class.getResource("/Img/Check-32.png")));
+		chckbxIsAdmin.setIcon(new ImageIcon(SignUpGUI.class.getResource("/com/smup/Img/boxCheck-32.png")));
+		chckbxIsAdmin.setSelectedIcon(new ImageIcon(SignUpGUI.class.getResource("/com/smup/Img/Check-32.png")));
+		chckbxIsAdmin.setPressedIcon(new ImageIcon(SignUpGUI.class.getResource("/com/smup/Img/Check-32.png")));
 		chckbxIsAdmin.setBorder(new MatteBorder(1, 1, 1, 1, (Color) AppColor.white));
 		chckbxIsAdmin.setFocusPainted(false);
 		chckbxIsAdmin.setForeground(AppColor.white);
@@ -242,9 +242,9 @@ public class SignUpGUI extends JFrame {
 		contentPane.setLayout(null);
 		chckbxShowPassword.setHorizontalAlignment(SwingConstants.CENTER);
 		chckbxShowPassword.setBounds(555, 298, 40, 34);
-		chckbxShowPassword.setIcon(new ImageIcon(LoginGUI.class.getResource("/Img/NOShowPassword-32.png")));
-		chckbxShowPassword.setSelectedIcon(new ImageIcon(LoginGUI.class.getResource("/Img/ShowPassword-32.png")));
-		chckbxShowPassword.setPressedIcon(new ImageIcon(LoginGUI.class.getResource("/Img/ShowPassword-32.png")));
+		chckbxShowPassword.setIcon(new ImageIcon(LoginGUI.class.getResource("/com/smup/Img/NOShowPassword-32.png")));
+		chckbxShowPassword.setSelectedIcon(new ImageIcon(LoginGUI.class.getResource("/com/smup/Img/ShowPassword-32.png")));
+		chckbxShowPassword.setPressedIcon(new ImageIcon(LoginGUI.class.getResource("/com/smup/Img/ShowPassword-32.png")));
 		chckbxShowPassword.setForeground(Color.WHITE);
 		chckbxShowPassword.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		chckbxShowPassword.setFocusPainted(false);
@@ -257,7 +257,7 @@ public class SignUpGUI extends JFrame {
 		
 		JLabel logo = new JLabel("");
 		logo.setHorizontalAlignment(SwingConstants.CENTER);
-		logo.setIcon(new ImageIcon(LoginGUI.class.getResource("/Img/Logo-64.png")));
+		logo.setIcon(new ImageIcon(LoginGUI.class.getResource("/com/smup/Img/Logo-64.png")));
 		logo.setBounds(10, 23, 785, 94);
 		panelLogin.add(logo);
 		contentPane.add(labelX);
